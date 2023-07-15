@@ -1,0 +1,220 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  z-index: 9999; /* Asegura que el overlay esté en la parte superior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 7px solid #f3f3f3; /* Color del borde del loader */
+  border-top: 7px solid #CACAFA; /* Color del borde superior del loader (efecto cargando) */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite; /* Animación de rotación */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/**   */
+.content-wrapper{
+  min-height: 800px !important;
+}
+
+.my-swal {
+  z-index: X;
+}
+
+/** datatables PrimeReact */
+.datatable-crud-demo .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 960px) {
+    .datatable-crud-demo .p-toolbar {
+        flex-wrap: wrap;
+    }
+    .datatable-crud-demo .p-toolbar .p-button {
+        margin-bottom: 0.25rem;
+    }
+    .datatable-crud-demo .table-header {
+        flex-direction: column;
+    }
+    .datatable-crud-demo .table-header .p-input-icon-left, .datatable-crud-demo .table-header input {
+        width: 100%;
+    }
+}
+.user-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+  }
+  .user-badge.status-instock {
+    background: #C8E6C9;
+    color: #256029;
+  }
+  .user-badge.status-outofstock {
+    background: #FFCDD2;
+    color: #C63737;
+  }
+  .label-modal{
+    font-size: 13px;
+  }
+  .patient-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+  }
+  
+  .patient-badge.status-pago_consulta {
+    background: #C8E6C9;
+    color: #256029;
+  }
+  .patient-badge.status-agendado {
+    background: #FEEDAF ;
+    color: #8A5340;
+  }
+  .patient-badge.status-ninguno {
+    background: #bdbfc2 ;
+    color: #5C636A;
+  }
+  .patient-badge.status-no_pago {
+    background: #FFCDD2;
+    color: #C63737;
+  }
+/* TODO: Cambios en los estilos del tema. */
+  .fc-toolbar-title{
+    text-transform: uppercase;
+    color: #6366F1;
+  }
+  .fc-daygrid-day-number, .fc-col-header-cell-cushion {
+    color: #343a40;
+  }
+  .fc .fc-daygrid-day.fc-day-today{
+    background-color: #6365f157 !important;
+   
+  }
+  .sidebar a{
+    color: black !important;
+    font-weight: 500;
+  }
+  .brand-text{
+    color: black;
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+  .main-sidebar{
+    background-color: #ffffff;
+    border-radius: 4px;
+    top: 5rem!important;
+  }
+  .wrapper{
+    background-color:#f4f6f9;
+  }
+  .layout-navbar-fixed.layout-fixed .wrapper .sidebar{
+        margin-top: 0;
+  }
+  .navbar-light {
+    background-color: #ffffff;
+}
+
+.dahsboard__body{
+  padding-top: 0!important;
+}
+
+/* //TODO: Active Siderbar*/
+.sidebar-light-primary .nav-sidebar .nav-item .nav-link.active{
+background-color: #6365f157;
+border-radius:0.5rem;
+}
+.sidebar-light-primary .nav-sidebar .nav-item .nav-link:hover{
+  background-color: #6365f157 !important;
+  border-radius:0.5rem;
+  }
+/* //TODO:  Active nav porfile*/
+.navbar-light .navbar-nav .nav-link.active{
+  background-color: #6365f157;
+  border-radius:0 1rem;
+}
+/* //TODO: Background Header Dialog */
+.p-dialog-header{
+  background-color: #f4f6f9 !important;
+}
+.p-toolbar-group-left{
+  width:85% !important
+}
+
+/* //TODO: Siderbar responsive */
+  @media screen and (max-width: 992px){
+    .main-sidebar{
+      top: 0 !important;
+    }
+    .layout-navbar-fixed.layout-fixed .wrapper .sidebar{
+      margin-top: calc(3.5rem + 1px);
+}
+  }
+  /* //TODO: Responsive Dialog */
+  @media screen and (max-width: 450px){
+    .p-dialog{
+    width: 95vw !important;
+   }
+ }
+  @media screen and (max-width: 540px){
+     .p-dialog{
+     width: 95vw !important;
+    }
+  }
+  @media screen and (max-width: 960px){
+    .p-dialog{
+    width: 95vw !important;
+   }
+ }
+ .p-fileupload-buttonbar button{
+  visibility: hidden !important;
+ }
+
+ /** Estilos de input type file  */
+
+ .formFile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #6366F1;
+  height: 300px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+ .uploaded-row{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #e9f0ff;
+ }
+ .upload-content{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,45 @@
+.body-login{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFF3F8;
+    }
+    .card-login{
+        color: rgb(0, 0, 0);
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.5rem;
+    }
+    .title-login{
+        text-align: center;
+    }
+    .subtitle-login{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .logo-login{
+        text-align: center;
+    }
+    .input-login{
+        margin-top: 5px;
+        margin-bottom: 2rem;
+        width: 30rem;
+    }
+    .p-password-input{
+        width: 30rem;
+    }
+    .btn-login{
+        width: 30rem;
+    }
+    @media (max-width:600px) {
+        .card-login{
+            margin-top: 5rem;
+        }
+        .input-login{
+            width: 20rem;
+        }
+        .btn-login{
+            width: 20rem;
+        }
+    }
